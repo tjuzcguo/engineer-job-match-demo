@@ -15,6 +15,9 @@ class Mongo:
             return -1
         return self.demoDB[col]
 
+    def createCollection(self, colName):
+         self.demoDB[colName]
+
     def insertOne(self, col, data):
         if col != -1:
             col.insert_one(data)
